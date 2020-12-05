@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+header {   
+    box-sizing: border-box;    
+    box-shadow: 0px 12px 4px -4px rgba(38, 38, 38, 0.16);    
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 9999;
+}
+
+.header_content {    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.sign_in_and_basket{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.sign_in {
+    margin:16px; 
+    padding: 14px 20px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.basket {
+    box-sizing: border-box;
+    width: 40px;
+    height: 72px;    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search_field {    
+    margin-top: 20px;
+}
+
+
+.search_field {
+    border: none;
+    border-bottom: 2px solid rgba(117,117,117,0.5);
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.search_field:focus {
+    border: none;
+    border-bottom: 2px solid rgba(117,117,117,0.5);
+    outline: none;
+}
+
+.title_main {
+    margin-top: 56px;
+    display: flex;   
+    align-items: flex-start;
+}
+
+.title_main > span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+}
+
+.adv {
+    /* box-sizing: border-box; */
+    width: 308px;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    overflow: hidden;
+}
+.list_of_restaurants {
+    margin-top: 16px;
+}
+
+
+.adv p:nth-of-type(1) {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    text-transform: uppercase;
+}
+
+.adv p:nth-of-type(2) {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+}
+
+.adv p:nth-of-type(3) {
+font-size: 13px;
+line-height: 21px;
+color: #1D1D1D;
+}
+
+footer {
+    min-height: 552px;
+    background-color: #000000;    
+}
+
+.footer_content {
+    margin-left: auto;
+    margin-right: auto;
+       
+}
+
+
+.footer_content .footer_logo > img {
+    display: block;
+    padding-top: 56px;
+    padding-bottom: 40px;
+    width: 190px;
+    height: 20px;
+}
+
+.footer_logo {
+    border-bottom: 1px solid rgba(255,255,255,0.4); 
+}
+
+.footer_content .lang_selector {
+    margin: 32px 0;
+    width: 227px;    
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 14px;    
+    background-color:#3B3B3B;
+    border-radius: 2px;
+    display: block;
+    padding-top: 10px;   
+    padding-bottom: 10px;
+    position: relative;
+    outline: none;   
+}
+
+.lang_selector .globe_img {
+ margin-left: 16px;
+}
+.lang_selector span {
+    margin: 12px 90px 12px 16px;
+   }
+
+
+.lang_selector .lang_menu {
+    display: none;
+}
+
+.lang_selector:focus .lang_menu{
+    display: block; 
+    position: absolute;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.lang_menu li {
+    width: 227px;
+    height: inherit;
+    display: block;
+    list-style: none;
+    background-color:#3B3B3B;
+    margin: 10px 0; 
+    padding: 10px 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.lang_menu li:hover {
+    background-color:#424447
+       
+}
+
+.lang_menu a {
+    text-decoration: none;
+    color: #FFFFFF;;
+    font-size: 14px;      
+}
+
+.hash_tag {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.hash_tag span {
+    color: #49A144;
+}
+
+.social {
+    display: inline-flex;
+    margin-top: 17px;
+}
+
+.footer_middle_menu, .footer_right_menu {
+    margin-top: 39px;
+}
+
+.footer_middle_menu, .footer_right_menu, a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    display: block;
+    padding: 11px 0;
+
+}
+
+.footer_main_menu {
+    min-height: 220px;
+    border-bottom: 1px solid rgba(255,255,255,0.4); 
+}
+
+
+.footer_app_icons {
+    min-height: 120px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.footer_app_icons img {
+    padding: 0 20px;
+}
+
+.footer_bottom {
+    width: 100%;
+}
+
+.up_button {
+    box-sizing: border-box;
+    position: fixed;
+    top: 90%;
+    left: 70%;     
+}
+
+.up_button img {
+    opacity: 0.8;
+    padding: 27px 33px 28px 32px;
+    background: #59BD5A;
+    transition: all 1s ease 3s;
+    z-index: 10000; 
+    
+}
+
+
+
+.main_traktir_pushkin {
+  background-image: url("../img/pushkin_traktir.svg");  
+  min-height: 100%;  
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pushkin_banner {
+    height: 132px;
+    width: 313px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    padding: 36px 38px 38px 36px; 
+    margin-top: 54px;  
+    margin-left: 56px;
+}
+
+.pushkin_banner_bottom {
+    margin-top: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.pushkin_banner h1 {
+    font-size: 36px;
+    font-family: Roboto;    
+    line-height: 42px;
+    font-weight: normal;
+
+}
+
+.pushkin_banner p:nth-of-type(1) {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+}
+
+.pushkin_banner p:nth-of-type(2) {
+    padding: 8px 16px;
+    background: #262626;
+    border-radius: 16px;
+    font-size: 13px;    
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;   
+    color: #FFFFFF;
+    max-width: 100px;
+}
+
+.restaurant_menu {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant_menu ul {
+    list-style: none;       
+}
+
+.restaurant_menu li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.restaurant_menu li a{ 
+    text-decoration: none;
+    color: #626262;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.restaurant_menu li a:hover{ 
+    color: #327430;
+
+}
+
+.dish {
+    width: 470px;
+    height: 160px;
+    margin-right: 16px;
+    margin-bottom: 49px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    box-sizing: border-box;
+    border-radius: 2px;   
+}
+
+.text_inside_dish {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: nowrap;
+    min-height: inherit;
+    justify-content: space-between;
+}
+
+.dish_name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+.dish_description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;   
+    color: #626262;
+}
+
+.dish_price {
+    justify-content: flex-end;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;   
+    color: #1D1D1D;
+    
+}
+
+.img_inside_dish img {
+    width: 170px;    
+    height: 160px;    
+}
+
+.main_header {  
+    margin-top: 30px;
+    margin-bottom: 32px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    color: #1D1D1D;
+}
+
+
+@media screen and (min-width: 1125px) {
+    .header_content {
+        max-width: 954px;
+    }
+    main {
+        max-width: 954px;
+    }
+    .footer_content {
+        max-width: 954px;
+    }
+    .main_traktir_pushkin {
+        min-height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1124px) {
+    body {
+        margin: 0 auto;
+        overflow-x: hidden; 
+    }
+    header {        
+        padding: 0 8px;
+    }
+    .footer_content {
+        padding: 0 8px;
+    }
+    .adv {
+        padding: 0 8px;
+        margin-right: 16px;
+    }
+    .lang_selector {       
+        max-width: 176px;    
+    }
+    img {
+        object-fit: cover;  
+                    
+    }
+
+    .lang_menu li {
+        max-width: 176px;
+    }    
+    .lang_selector span {
+        margin-right: 50px;
+       }
+    .title_main {
+         padding: 0 8px;  
+       }
+    .pushkin_banner {
+        margin-left: 8px;
+       }
+    .main_traktir_pushkin {      
+        background-size: cover;
+    }
+    .restaurant_menu {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+   .basket {
+       display: none;
+   }
+   .main_traktir_pushkin {      
+    background-size: cover;
+}
+
+.pushkin_banner {
+    margin: 0px auto 0px auto;
+   }
+.restaurant_menu {
+    display: none;
+}
+   .pushkin_banner_bottom { 
+    flex-direction: column;
+    align-items: center;
+   }
+}
