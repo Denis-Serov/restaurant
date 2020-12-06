@@ -270,8 +270,8 @@ footer {
 .up_button {
     box-sizing: border-box;
     position: fixed;
-    top: 90%;
-    left: 70%;     
+    top: 85vh;
+    left: 70vw;     
 }
 
 .up_button img {
